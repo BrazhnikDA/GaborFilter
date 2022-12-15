@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 def BGR2GRAY(img):
     gray = 0.2126 * img[..., 2] + 0.7152 * img[..., 1] + 0.0722 * img[..., 0]
+ 
     return gray
 
 def Gabor_filter(K_size=111, Sigma=7, Gamma=1.2, Lambda=10, Psi=0, angle=0):
